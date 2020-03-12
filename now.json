@@ -1,6 +1,6 @@
 {
   "name": "diywebdev-website",
   "version": 2,
-  "alias": ["diywebdev.now.sh"],
+  "alias": ["diywebdev.now.sh", "diyweb.dev", "www.diyweb.dev"],
   "scope": "vlenceleuth@gmail.com"
 }
