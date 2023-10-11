@@ -1,7 +1,7 @@
 {
   "name": "diywebdev-website",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "repository": "git@github.com:vlence/diywebdev-website.git",
   "author": "Victor Basumatary",
   "license": "MIT"
