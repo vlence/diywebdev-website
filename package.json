@@ -4,11 +4,5 @@
   "main": "index.js",
   "repository": "git@github.com:vlence/diywebdev-website.git",
   "author": "Victor Basumatary",
-  "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.26.7"
-  },
-  "scripts": {
-    "dev": "browser-sync start -ws"
-  }
+  "license": "MIT"
 }
