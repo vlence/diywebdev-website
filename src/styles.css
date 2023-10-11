@@ -21,7 +21,8 @@ h2 {
 }
 
 a {
-    @apply text-yellow-400;
+    @apply text-blue-600;
+    @apply dark:text-yellow-400;
 }
 
 ul {
