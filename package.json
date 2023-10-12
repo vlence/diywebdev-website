@@ -9,7 +9,9 @@
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "watch:css": "tailwindcss -i src/styles.css -o public/styles.css --watch",
-    "build:css": "tailwindcss -i src/styles.css -o public/styles.css --minify"
+    "watch:css": "tailwindcss -i assets/main.css -o assets/styles.css --watch",
+    "prebuild": "tailwindcss -i assets/main.css -o assets/styles.css --minify",
+    "build": "hugo --minify",
+    "start": "hugo server -p 8080 -D"
   }
 }
