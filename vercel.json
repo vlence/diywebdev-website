@@ -3,5 +3,5 @@
   "version": 2,
   "alias": ["diywebdev.now.sh", "diyweb.dev", "www.diyweb.dev"],
   "scope": "vlenceleuth@gmail.com",
-  "buildCommand": "npm build"
+  "buildCommand": "npm run build"
 }
