@@ -5,9 +5,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DIY Web Dev</title>
-
-	<link rel="stylesheet" href="/styles.css">
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+	{{ $style := resources.Get "styles.css" }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 
 <body>
@@ -15,42 +15,9 @@
 		<a href="/" class="text-2xl font-mono">diyweb.dev</a>
 	</header>
 
-	<h1 class="mt-10">
-		Welcome!
-	</h1>
-
-	<p class="mt-4">
-		Hi! My name is <a href="https://www.linkedin.com/in/vlence/" target="_blank">Victor Basumatary</a> and I build web applications for a
-		living. I learned web development through self study, trial and error,
-		and I want to share what I've learned over the years with everyone else
-		out there who are also interested in learning web development on their
-		own.
-	</p>
-
-	<h2 class="mt-20">
-		Why?
-	</h2>
-
-	<p class="mt-4">
-		It is my personal opinion that most modern tutorials and courses on web
-		development are far too complicated. This website/course is my attempt
-		at a simple and straightforward web development course.
-	</p>
-
-	<h2 class="mt-20">
-		Let's Begin.
-	</h2>
-
-	<p class="mt-4">
-		A good place to start when learning something is to learn about its
-		history: how it came about and why. It's often quite boring in the
-		beginning but having this knowledge helps us have the right mindset once
-		we begin to explore the problems that web technologies aim to solve.
-	</p>
-
-	<p class="mt-4">
-		So let's begin. Our first lesson is <a href="/brief-history.html">a brief history of the web</a>.
-	</p>
+	<main class="mt-10">
+		{{ block "main" .}}{{ end }}
+	</main>
 
 	<footer class="py-20">
 		<a href="https://github.com/vlence/diywebdev-website" target="_blank"
