@@ -247,6 +247,97 @@ date: 2023-10-12T15:51:37+05:30
     modern day internet and are usually refered to together as TCP/IP.
 </p>
 
+<h2 class="mt-20">
+    The World Wide Web.
+</h2>
+
+<p class="mt-10">
+    With TCP and IP we have the means to address computers and speak with them
+    in a coherent way. Computers at this time were still largely used by the
+    academic and scientific community. One such organization is the CERN. Some
+    time in the 1980s Tim Berners-Lee, who worked at CERN, thought to himself,
+    "Wouldn't it be nice if we could all share our documents and collaborate
+    faster?" Even though we had TCP/IP it didn't mean any two computers
+    connected together could just begin sharing information. Yes TCP/IP gave us
+    the means to share 1s and 0s, which is information, but these 1s and 0s
+    mean something specific. It could be a document, a picture, a video, etc.
+    The recipient must be able to understand these 1s and 0s as a document,
+    a picture or a video.
+</p>
+
+<p class="mt-10">
+    Data wasn't very complicated back then. It was mostly text. If you could
+    make some text bold or italic it immediately added a lot of visual flair to
+    your otherwise bland documents. And so Tim went about thinking of ways to
+    share his text documents. Different computers in CERN stored their documents
+    in different ways. One approach could be to force everyone to use the same
+    type of computer and documents but that wouldn't be very friendly; nobody
+    likes a dictator. The second approach was to have a new type of document
+    which is simple enough to be supported in different computers. This seemed
+    more viable.
+</p>
+
+<p class="mt-10">
+    We've all gone to school right? One of the joys of school, at least for me,
+    was plastering my textbooks with highlights. I liked to highlight text that
+    I thought was important and would refer to them later. I would use green to
+    highlight definitions, red to highlight important sections, yellow to
+    highlight references, blue to ... you get the point. What if we could do
+    the same with text stored in a computer. What if I could mark a bit of text
+    as bold and the computer would render that text as bold on the screen?
+</p>
+
+<p class="mt-10">
+    This turned out to be a powerful idea: Write some text and then markup the
+    text. Unlike our textbooks we can't highlight digital text using markers.
+    Instead we need to find a way to markup the text using the text itself.
+    We call such text HyperText and we write HyperText using HyperText
+    Markup Language (<abbr>HTML</abbr>). You've been reading HyperText all this
+    while in fact. This entire website is just HyperText! Consider the following
+    lines of text:
+</p>
+
+<div class="mt-10"></div>
+
+{{<highlight html>}}
+    This is paragraph 1.
+    This is paragraph 2.
+{{</highlight>}}
+
+<p class="mt-10">
+    How does the computer know that they're two paragraphs? Well it doesn't.
+    Computers are stupid. We need to tell them that they're two paragraphs.
+    Here is how we can tell the computer this in HTML:
+</p>
+
+<div class="mt-10"></div>
+
+{{<highlight html>}}
+    <p>This is paragraph 1.</p>
+    <p>This is paragraph 2.</p>
+{{</highlight>}}
+
+<p class="mt-10">
+    See the funny looking things like <code>&lt;p&gt;</code>? These are called
+    tags. We'll learn more about them later. So now with HTML we have a way to
+    markup our text and tell the computer what is a paragraph, what is a table,
+    what is bold text, what is italic text, etc. But does a computer know what
+    HTML is? No. Computers are stupid. We need to program it to understand HTML.
+    The great thing about HTML is that it is simple for humans to read and
+    understand and simple enough to build a program for. You've been using such
+    a program so far. Web browsers do just that - they get HTML documents from
+    the internet and render them onto your screen. If you right click this
+    page and select "View page source" or something of that effect you'll be
+    presented with a wall of colored text. What you see is largely HTML. Your
+    web browser reads all of that and turns it into the page you're reading
+    right now.
+</p>
+
+<p class="mt-10">
+    Great. So we have HTML and a neat computer program called the web browser
+    to 
+</p>
+
 <p class="mt-10">
     <i>[This page is incomplete. Stay tuned.]</i>
 </p>
