@@ -335,9 +335,68 @@ date: 2023-10-12T15:51:37+05:30
 
 <p class="mt-10">
     Great. So we have HTML and a neat computer program called the web browser
-    to 
+    that can read the HTML document and present it in a nice, visual way to you,
+    the user. But where does this HTML document come from? Well it obviously needs
+    to come from another computer but how? For this we use something called the
+    HyperText Transfer Protocol, or <abbr>HTTP</abbr>. HTTP is a simple, text
+    based protocol. That means we use ordinary text, in English, to transfer
+    data between computers. This makes it very easy for us humans to understand
+    what's going on.
 </p>
 
 <p class="mt-10">
-    <i>[This page is incomplete. Stay tuned.]</i>
+    Why can't we just use TCP/IP to share HTML documents? Well we are. HTTP is
+    built on top of TCP/IP. What I mean by that is that the HTTP requests and
+    responses are sent across computers using TCP/IP. We need another protocol
+    on top of TCP/IP because we need a way to figure out exactly what is being
+    shared between computers. TCP/IP allows us to share data between computers
+    over a network but it doesn't tell the receiving computer what exactly is
+    being shared. If both computers use HTTP then the receiving computer now
+    has a way to know what's being shared with it.
+</p>
+
+<p class="mt-10 bg-slate-300 dark:bg-slate-600 rounded-lg p-4">
+    <i>We call HTTP a layer 7 protocol and TCP a layer 4 protocol.</i>
+</p>
+
+<p class="mt-10">
+    From all of this we can understand that the computer that shares the HTML
+    document must know HTTP and the computer that receives the HTML document
+    must also know HTTP. Again, computers are stupid; they won't magically know
+    what HTTP is. So we build computer programs to make computers understand HTTP.
+    HTTP is very simple: one computer makes an HTTP request to an HTTP server,
+    and the HTTP server responds back with an HTTP response. We generally call
+    the computer sending the HTTP requests clients and the computer responding
+    with the HTTP responses the web server. Your web browser is an HTTP client
+    and whenever you visit a website it's actually making and sending HTTP
+    requests.
+</p>
+
+<p class="mt-10">
+    So this is what Tim Berners-Lee did. He designed HTML, built a web server
+    and an HTTP client. Now him and his colleagues could happily share documents
+    with each other and experience new levels of productivity. This was such a
+    great invention that other academics were interested in it. Soon enough
+    colleges were trying out and using this technology in their campuses, large
+    organizations were, it spread like wild fire. Most people were building
+    their own web servers and clients back then. This technology also proved to
+    be simple enough for the average computer user to use and so it very quickly
+    reached people's homes. People were soon using the web browsers like
+    Netscape Navigator and accessing the World Wide Web <abbr>(WWW)</abbr>.
+</p>
+
+<p class="mt-10">
+    Many enterprising individuals saw the potential of this technology and quickly
+    moved to establish internet-based companies. By the mid 1990s we had the
+    beginnings of giants like Yahoo, Google and Amazon.
+</p>
+
+<h2 class="mt-20">
+    What's next?
+</h2>
+
+<p class="mt-10">
+    Well what's next is start learning about these technologies! Yes we've
+    covered a lot on this page but I promise we will go through them one-by-one
+    in a simple way. We will <a href="/html">start with HTML</a>.
 </p>
